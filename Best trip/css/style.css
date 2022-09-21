@@ -617,32 +617,6 @@ h1 {
 
 /*Comments*/
 
-.firstarrow {
-    width: 50px;
-    height: 50px;
-    margin: 222px 0px 205px 125px;
-    border: 1px solid rgba(35, 219, 231, 1);
-    border-radius: 50%;
-    background: rgba(35, 219, 231, 1);
-}
-
-.firstarrow:before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 17.92px;
-
-    border-top: 2px solid #ffffff ;
-    border-right: 2px solid #ffffff;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    z-index: 1;
-
-    transform: translateY(-50%) rotate(135deg);
-}
-
 .comments {
     background: rgba(233, 249, 255, 1);
 }
@@ -901,4 +875,78 @@ footer {
 
 .foot__socialnetwork {
     display: flex;
+}
+
+.foot__logo {
+    margin: 145px 198px 176px 125px;
+}
+
+.footer__pic {
+    padding-left: 15px;
+    width: 71px;
+    height: 42.93px;
+    margin-bottom: 41px;
+}
+
+.footer__text {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.foot__socialnetwork {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.circle__network {
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: rgba(35, 219, 231, 1);
+
+    border: 1px solid rgba(35, 219, 231, 1);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.fa-brands.fa-instagram:before {
+    display: block;
+    width: 22.92px;
+    height: 22.92px;
+    margin: 17px 17px;
+}
+
+.fa-brands.fa-facebook:before {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 16px 16px;
+}
+
+.fa-brands.fa-youtube:before {
+    display: block;
+    width: 26.25px;
+    height: 18.4px;
+    margin: 17px 15px;
+}
+
+.popular, .products {
+    margin-right: 178px;
+}
+.footer__head {
+    display: block;
+    margin: 122px 0px 50px 0px;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(6, 88, 138, 1);
+}
+
+.footer__popular {
+    display: block;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 28.8px;
+    padding-bottom: 50px;
 }
