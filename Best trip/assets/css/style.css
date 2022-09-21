@@ -114,7 +114,7 @@ body {
 .header__image {
     width: 100%;
     max-width: 904px;
-    background: url("../assets/Images/Header/1575938321_1-2.jpg") center no-repeat ;
+    background: url("../images/Header/mountains.jpg") center no-repeat ;
     background-size: cover;
    
 }

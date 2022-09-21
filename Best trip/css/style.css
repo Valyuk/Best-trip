@@ -56,7 +56,6 @@ body {
     width: 100%;
     max-width: 696px;
     margin: 30px 0px 0px 125px;
-  
 }
 
 .logo {
@@ -75,8 +74,6 @@ body {
     font-family: 'EB Garamond', serif;
     line-height: 22.5px;
 }
-
-
 
 .nav__link--image {
     margin: 15px 0px 0px 420px;
@@ -114,9 +111,8 @@ body {
 .header__image {
     width: 100%;
     max-width: 904px;
-    background: url("../assets/Images/Header/1575938321_1-2.jpg") center no-repeat ;
+    background: url("../assets/images/header/mountains.jpg") center no-repeat;
     background-size: cover;
-   
 }
 
 .header__image--nav {
@@ -139,8 +135,7 @@ body {
 }
 
 .place {
-    
-    margin: 15px 0px 0px 114px ;
+    margin: 15px 0px 0px 114px;
 }
 
 .foot__place {
@@ -299,8 +294,6 @@ body {
     transform: translateY(-50%) rotate(135deg);
 }
 
-
-
 .people__text {
     margin: 9px 0px 9px 25px;
 }
@@ -337,7 +330,7 @@ body {
 }
 
 .logos_item {
-   padding: 50px 50px ;
+   padding: 50px 50px;
 }
 
 /*Img*/
@@ -356,7 +349,6 @@ body {
    background-color: rgba(244, 252, 255, 1);
 }
 
-
 h1 {
     display: flex;
     font-family: 'EB Garamond';
@@ -366,7 +358,6 @@ h1 {
 
     padding: 90px 0px 0px 125px;
 }
-
 
 .relax__title {
     font-size: 24px;
@@ -378,7 +369,7 @@ h1 {
 
 .relax__btn {
     margin: 79px 0px 0px 125px;
-    border: 1px solid rgba(35, 219, 231, 1) ;
+    border: 1px solid rgba(35, 219, 231, 1);
     border-radius: 15px;
     width: 250px;
     height: 60px;
@@ -391,9 +382,6 @@ h1 {
     font-weight: 700;
     padding: 17px 18px;
 }
-
-
-
 
 .relax__item {
     position: absolute;
@@ -428,7 +416,7 @@ h1 {
 /*Section_relax*/
 
 .section__relax {
-    background-color: rgba(244, 252, 255, 1); ;
+    background-color: rgba(244, 252, 255, 1);
     display: flex;
     position: relative;
 }
@@ -440,7 +428,7 @@ h1 {
 }
 
 .relax__vactitle {
-    margin-top: 185px ;
+    margin-top: 185px;
 
     font-size: 64px;
     color: rgba(0, 0, 0, 1);
@@ -514,7 +502,7 @@ h1 {
 .circle__first {
     width: 50px;
     height: 50px;
-    background: rgba(231, 231, 231, 1) ;
+    background: rgba(231, 231, 231, 1);
     border-radius: 50%;
 
     margin: 181px 15px 0px 573px;
@@ -569,7 +557,7 @@ h1 {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.river, .city , .sand   {
+.river, .city , .sand {
     width: 400px;
     height: 500px;
 
@@ -582,21 +570,21 @@ h1 {
 
 .pic__name {
     font-size: 30px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
     margin: 0px 91px 25px 50px;
 }
 
 .pic__name--two {
     font-size: 30px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
     margin: 0px 0px 29px 48px;
 }
 
 .pic__name--three {
     font-size: 30px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
     margin: 0px 11px 32px 50px;
 }
@@ -615,15 +603,15 @@ h1 {
 
 .pic__rating {
     font-size: 24px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
-    padding-top: 5px ;
+    padding-top: 5px;
 }
 
 .pic__text {
     margin: 0px 32px 55px 19px;
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -635,7 +623,7 @@ h1 {
     margin: 222px 0px 205px 125px;
     border: 1px solid rgba(35, 219, 231, 1);
     border-radius: 50%;
-    background: rgba(35, 219, 231, 1) ;
+    background: rgba(35, 219, 231, 1);
 }
 
 .firstarrow:before {
@@ -656,7 +644,7 @@ h1 {
 }
 
 .comments {
-    background: rgba(233, 249, 255, 1) ;
+    background: rgba(233, 249, 255, 1);
 }
 
 .comments__title {
@@ -671,7 +659,6 @@ h1 {
     display: flex;
 }
 
-
 .comment__first {
     width: 323px;
     height: 260px;
@@ -685,7 +672,7 @@ h1 {
 
 .first__text {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     padding: 50px 19px 10.47px 19px;
     text-align: center;
 }
@@ -694,10 +681,10 @@ h1 {
     display: flex;
 }
 
-
 .stars {
     margin-left: 72px;
 }
+
 .stars__pic {
     width: 25px;
     height: 21.87px;
@@ -729,7 +716,7 @@ h1 {
 .nickprof {
     margin-top: 4px;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .comment__second {
@@ -745,16 +732,16 @@ h1 {
 
 .second__text {
     font-size: 24px;
-    color: rgba(0, 0, 0, 1) ;
+    color: rgba(0, 0, 0, 1);
     text-align: center;
 
     margin: 64px 20px 26.07px 22px;
-    
 }
 
 .stars--two {
     margin-left: 135px;
 }
+
 .stars__pic--two {
     width: 25px;
     height: 21.87px;
@@ -778,12 +765,12 @@ h1 {
 .saraname {
     font-size: 24px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 1) ;
+    color: rgba(0, 0, 0, 1);
 }
 
 .saraprof {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     margin-top: 4px;
 }
 
@@ -801,7 +788,7 @@ h1 {
 
 .third__text {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     padding: 50px 19px 23.27px 19px;
     text-align: center;
 }
@@ -845,15 +832,15 @@ h1 {
 .markprof {
     margin-top: 4px;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /*Newsletter*/
 
 .newsletter {
-    background: rgba(244, 252, 255, 1) ;
+    background: rgba(244, 252, 255, 1);
     height: 679px;
-    border-bottom: 1px solid rgba(165, 165, 165, 1) ;
+    border-bottom: 1px solid rgba(165, 165, 165, 1);
 }
 
 .letter__title {
@@ -868,7 +855,7 @@ h1 {
     text-align: center;
     font-size: 24px;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     margin: 0px 580px 60px 580px;
 }
 
@@ -880,7 +867,7 @@ h1 {
 
     border: 1px solid rgba(217, 234, 235, 1);
     border-radius: 25px;
-    background: rgba(217, 234, 235, 1) ;
+    background: rgba(217, 234, 235, 1);
 }
 
 .textemail {
@@ -891,8 +878,8 @@ h1 {
 }
 
 .button {
-    color: rgba(255, 255, 255, 1) ;
-    background: rgba(35, 219, 231, 1) ;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(35, 219, 231, 1);
     width: 202px;
     height: 70px;
 
@@ -907,7 +894,7 @@ h1 {
 /*Footer*/
 
 footer {
-    background: rgba(244, 252, 255, 1) ;
+    background: rgba(244, 252, 255, 1);
     height: 543px;
     display: flex;
 }
