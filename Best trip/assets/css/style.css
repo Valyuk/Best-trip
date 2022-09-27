@@ -44,7 +44,7 @@ body {
 
 /* Header */
 
-.header__inner {
+.header {
     display: flex;
     background-color: #F4FCFF;
     width: 100%;
@@ -56,7 +56,6 @@ body {
     width: 100%;
     max-width: 696px;
     margin: 30px 0px 0px 125px;
-  
 }
 
 .logo {
@@ -75,8 +74,6 @@ body {
     font-family: 'EB Garamond', serif;
     line-height: 22.5px;
 }
-
-
 
 .nav__link--image {
     margin: 15px 0px 0px 420px;
@@ -114,9 +111,8 @@ body {
 .header__image {
     width: 100%;
     max-width: 904px;
-    background: url("../images/Header/mountains.jpg") center no-repeat ;
+    background: url("../images/header/mountains.jpg") center no-repeat;
     background-size: cover;
-   
 }
 
 .header__image--nav {
@@ -128,6 +124,7 @@ body {
 .header__foot {
     display: flex;
     position: absolute;
+    justify-content: space-between;
     width: 1008px;
     height: 100px;
     left: 239px;
@@ -138,12 +135,11 @@ body {
     border-radius: 25px;
 }
 
-.place {
-    
-    margin: 15px 0px 0px 114px ;
+.foot__item {
+    padding: 15px;
 }
 
-.foot__place {
+.foot__title {
     font-family: 'EB Garamond', serif;
     font-size: 16px;
     font-weight: 400;
@@ -152,7 +148,7 @@ body {
     margin-bottom: 8px;
 }
 
-.destination {
+.foot__inside {
     height: 40px;
     width: 209px;
 
@@ -167,7 +163,7 @@ body {
     color:  rgba(6, 88, 138, 1);
 }
 
-.destination:after {
+.foot__inside:after {
     content: "";
     display: block;
     width: 9px;
@@ -203,103 +199,9 @@ body {
     color: rgba(35, 219, 231, 1);
 }
 
-.start {
-    margin: 15px 0px 0px 77px;
-}
-
-.foot__start {
-    font-style: 'Garamond';
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.6);
-
-    margin-bottom: 8px;
-}
-
-.date {
-    height: 40px;
-    width: 209px;
-
-    box-sizing: border-box;
-    position: absolute;
-    border: 0.25px solid #00000042;
-    border-radius: 10px;
-
-    font-family: 'EB Garamond', serif;
-    font-size: 18px;
-    line-height: 21.6px;
-    font-weight: 400;
-    color:  rgba(6, 88, 138, 1);
-}
-
-.date:after{
-        content: "";
-        display: block;
-        width: 9px;
-        height: 9px;
-    
-        border-top: 2px solid #000000;
-        border-right: 2px solid #000000;
-    
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        z-index: 1;
-    
-        transform: translateY(-50%) rotate(135deg);
-    }
-
-
 .date__text {
-    margin: 9px 0px 9px 15px;
-}
-
-.amount {
-    margin: 15px 0px 0px 116px;
-}
-
-.foot__amount {
-    font-family: 'EB Garamond', serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.6);
-
-    margin-bottom: 8px;
-}
-
-.people {
-    height: 40px;
-    width: 209px;
-
-    box-sizing: border-box;
-    position: absolute;
-    border: 0.25px solid #00000042;
-    border-radius: 10px;
-
-    font-size: 18px;
-    line-height: 21.6px;
-    font-weight: 400;
-    color:  rgba(6, 88, 138, 1);
-}
-
-.people:after {
-    content: "";
-    display: block;
-    width: 9px;
-    height: 9px;
-
-    border-top: 2px solid #000000;
-    border-right: 2px solid #000000;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    z-index: 1;
-
-    transform: translateY(-50%) rotate(135deg);
-}
-
-
+    margin: 9px 0px 9px 15px; 
+ }
 
 .people__text {
     margin: 9px 0px 9px 25px;
@@ -311,7 +213,6 @@ body {
     height: 100px;
     border-radius: 25px;
     box-sizing: border-box;
-    margin-left: 118px;
 }
 
 .discover__text {
@@ -334,10 +235,7 @@ body {
 .logos {
     display: flex;
     justify-content: space-between;
-}
-
-.logos_item {
-   padding: 50px 50px ;
+    padding: 50px 50px;
 }
 
 /*Img*/
@@ -345,7 +243,7 @@ body {
 .img {
     max-width: 100%;
     height: 383px;
-    background: url(../assets/Images/img/img.jpg) no-repeat center;
+    background: url(../images/img/img.jpg) no-repeat center;
 }
 
 /*Relax*/
@@ -355,7 +253,6 @@ body {
    position: relative;
    background-color: rgba(244, 252, 255, 1);
 }
-
 
 h1 {
     display: flex;
@@ -367,7 +264,6 @@ h1 {
     padding: 90px 0px 0px 125px;
 }
 
-
 .relax__title {
     font-size: 24px;
     font-weight: 400;
@@ -378,22 +274,16 @@ h1 {
 
 .relax__btn {
     margin: 79px 0px 0px 125px;
-    border: 1px solid rgba(35, 219, 231, 1) ;
+    border: 1px solid rgba(35, 219, 231, 1);
     border-radius: 15px;
     width: 250px;
     height: 60px;
     background-color: rgba(35, 219, 231, 1);
-}
-
-.relax__text {
     color: rgba(255, 255, 255, 1);
     font-size: 22px;
     font-weight: 700;
     padding: 17px 18px;
 }
-
-
-
 
 .relax__item {
     position: absolute;
@@ -428,7 +318,7 @@ h1 {
 /*Section_relax*/
 
 .section__relax {
-    background-color: rgba(244, 252, 255, 1); ;
+    background-color: rgba(244, 252, 255, 1);
     display: flex;
     position: relative;
 }
@@ -440,7 +330,7 @@ h1 {
 }
 
 .relax__vactitle {
-    margin-top: 185px ;
+    margin-top: 185px;
 
     font-size: 64px;
     color: rgba(0, 0, 0, 1);
@@ -514,7 +404,7 @@ h1 {
 .circle__first {
     width: 50px;
     height: 50px;
-    background: rgba(231, 231, 231, 1) ;
+    background: rgba(231, 231, 231, 1);
     border-radius: 50%;
 
     margin: 181px 15px 0px 573px;
@@ -533,43 +423,22 @@ h1 {
 
 .relax__pic {
     display: flex;
+    justify-content: space-between;
     background: rgba(244, 252, 255, 1);
 }
 
-.pic__first{
+.pic {
     width: 437px;
     height: 700px;
 
-    margin: 60px 20px 0px 125px;
+    margin: 60px;
     border: 1px solid #ffffff;
     background: #ffffff ;
     border-radius: 71px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.pic__second {
-    width: 437px;
-    height: 700px;
-
-    margin-top: 60px ;
-    border: 1px solid #ffffff;
-    background: #ffffff ;
-    border-radius: 71px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.pic__third {
-    width: 437px;
-    height: 700px;
-
-    margin: 60px 0px 0px 20px ;
-    border: 1px solid #ffffff;
-    background: #ffffff ;
-    border-radius: 71px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.river, .city , .sand   {
+.places {
     width: 400px;
     height: 500px;
 
@@ -582,21 +451,21 @@ h1 {
 
 .pic__name {
     font-size: 30px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
     margin: 0px 91px 25px 50px;
 }
 
 .pic__name--two {
     font-size: 30px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
     margin: 0px 0px 29px 48px;
 }
 
 .pic__name--three {
     font-size: 30px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
     margin: 0px 11px 32px 50px;
 }
@@ -615,48 +484,22 @@ h1 {
 
 .pic__rating {
     font-size: 24px;
-    color: rgba(6, 88, 138, 1) ;
+    color: rgba(6, 88, 138, 1);
 
-    padding-top: 5px ;
+    padding-top: 5px;
 }
 
 .pic__text {
     margin: 0px 32px 55px 19px;
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 
 /*Comments*/
 
-.firstarrow {
-    width: 50px;
-    height: 50px;
-    margin: 222px 0px 205px 125px;
-    border: 1px solid rgba(35, 219, 231, 1);
-    border-radius: 50%;
-    background: rgba(35, 219, 231, 1) ;
-}
-
-.firstarrow:before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 17.92px;
-
-    border-top: 2px solid #ffffff ;
-    border-right: 2px solid #ffffff;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    z-index: 1;
-
-    transform: translateY(-50%) rotate(135deg);
-}
-
 .comments {
-    background: rgba(233, 249, 255, 1) ;
+    background: rgba(233, 249, 255, 1);
 }
 
 .comments__title {
@@ -669,8 +512,9 @@ h1 {
 
 .comments__people {
     display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
 }
-
 
 .comment__first {
     width: 323px;
@@ -680,12 +524,12 @@ h1 {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
     background: #ffffff;
 
-    margin: 108px 20px 109px 64px;
+    margin: 108px 20px 109px 0px;
 }
 
 .first__text {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     padding: 50px 19px 10.47px 19px;
     text-align: center;
 }
@@ -694,10 +538,10 @@ h1 {
     display: flex;
 }
 
-
 .stars {
     margin-left: 72px;
 }
+
 .stars__pic {
     width: 25px;
     height: 21.87px;
@@ -729,7 +573,7 @@ h1 {
 .nickprof {
     margin-top: 4px;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .comment__second {
@@ -745,16 +589,16 @@ h1 {
 
 .second__text {
     font-size: 24px;
-    color: rgba(0, 0, 0, 1) ;
+    color: rgba(0, 0, 0, 1);
     text-align: center;
 
     margin: 64px 20px 26.07px 22px;
-    
 }
 
 .stars--two {
     margin-left: 135px;
 }
+
 .stars__pic--two {
     width: 25px;
     height: 21.87px;
@@ -778,12 +622,12 @@ h1 {
 .saraname {
     font-size: 24px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 1) ;
+    color: rgba(0, 0, 0, 1);
 }
 
 .saraprof {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     margin-top: 4px;
 }
 
@@ -801,7 +645,7 @@ h1 {
 
 .third__text {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     padding: 50px 19px 23.27px 19px;
     text-align: center;
 }
@@ -845,15 +689,15 @@ h1 {
 .markprof {
     margin-top: 4px;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /*Newsletter*/
 
 .newsletter {
-    background: rgba(244, 252, 255, 1) ;
+    background: rgba(244, 252, 255, 1);
     height: 679px;
-    border-bottom: 1px solid rgba(165, 165, 165, 1) ;
+    border-bottom: 1px solid rgba(165, 165, 165, 1);
 }
 
 .letter__title {
@@ -868,7 +712,7 @@ h1 {
     text-align: center;
     font-size: 24px;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.7) ;
+    color: rgba(0, 0, 0, 0.7);
     margin: 0px 580px 60px 580px;
 }
 
@@ -880,7 +724,7 @@ h1 {
 
     border: 1px solid rgba(217, 234, 235, 1);
     border-radius: 25px;
-    background: rgba(217, 234, 235, 1) ;
+    background: rgba(217, 234, 235, 1);
 }
 
 .textemail {
@@ -890,9 +734,9 @@ h1 {
     color: rgba(0, 0, 0, 0.7);
 }
 
-.button {
-    color: rgba(255, 255, 255, 1) ;
-    background: rgba(35, 219, 231, 1) ;
+button {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(35, 219, 231, 1);
     width: 202px;
     height: 70px;
 
@@ -907,12 +751,84 @@ h1 {
 /*Footer*/
 
 footer {
-    background: rgba(244, 252, 255, 1) ;
+    background: rgba(244, 252, 255, 1);
     height: 543px;
     display: flex;
+    justify-content: space-between;
+    padding-right: 250px;
 }
 
 .foot__socialnetwork {
     display: flex;
-    
+}
+
+.foot__logo {
+    margin: 145px 0px 176px 125px;
+}
+
+.footer__pic {
+    padding-left: 15px;
+    width: 71px;
+    height: 42.93px;
+    margin-bottom: 41px;
+}
+
+.footer__text {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.foot__socialnetwork {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.circle__network {
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: rgba(35, 219, 231, 1);
+
+    border: 1px solid rgba(35, 219, 231, 1);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.fa-brands.fa-instagram:before {
+    display: block;
+    width: 22.92px;
+    height: 22.92px;
+    margin: 17px 17px;
+}
+
+.fa-brands.fa-facebook:before {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 16px 16px;
+}
+
+.fa-brands.fa-youtube:before {
+    display: block;
+    width: 26.25px;
+    height: 18.4px;
+    margin: 17px 15px;
+}
+
+.footer__head {
+    display: block;
+    margin: 122px 0px 50px 0px;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(6, 88, 138, 1);
+}
+
+.footer__popular {
+    display: block;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 28.8px;
+    padding-bottom: 50px;
 }
