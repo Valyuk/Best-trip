@@ -42,6 +42,21 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
+h2 {
+    font-size: 64px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    line-height: 120%;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    word-spacing: 1px;
+    line-height: 120%;
+}
+
 /* Header */
 
 .header {
@@ -59,15 +74,18 @@ body {
 }
 
 .logo {
-    margin: 20px 0px 0px 125px;
-    position: absolute;
     width: 71px;
     height: 50px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px ;
+}
+
 .nav__link {
-    margin-left: 80px;
-    padding: 20px;
     text-decoration: none;
     color: #000000;
     font-size: 20px;
@@ -75,9 +93,15 @@ body {
     line-height: 22.5px;
 }
 
+.header__image--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
 .nav__link--image {
-    margin: 15px 0px 0px 420px;
-    padding: 15px 15px;
     text-decoration: none;
     color:#000000;
     font-size: 20px;
@@ -86,13 +110,12 @@ body {
 }
 
 .nav__link--image.active {
+    padding: 6px 25px;
     border: 2px solid #000000;
     border-radius: 20px;
-    padding: 5px 30px;
-    margin-left: 20px;
 }
 
-.header__title {
+h1 {
     font-family: 'EB Garamond', serif;
     font-size: 70px;
     line-height: 77px;
@@ -101,22 +124,14 @@ body {
 }
 
 .header__text {
-    font-family: 'EB Garamond', serif;
-    font-size: 24px;
-    line-height: 28.8px;
-    color: rgba(0, 0, 0, 0.7);
     margin: 0px 50px 50px 0;
 }
 
 .header__image {
     width: 100%;
     max-width: 904px;
-    background: url("../images/header/mountains.jpg") center no-repeat;
+    background: url("../images/header/mountains.png") center no-repeat;
     background-size: cover;
-}
-
-.header__image--nav {
-   margin: 30px 50px 0px 0px;
 }
 
 /*Header__foot*/
@@ -134,10 +149,18 @@ body {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
 }
+ 
+ .foot__item--first {
+    padding: 15px 0px 0px 80px;
+ } 
 
-.foot__item {
-    padding: 15px;
-}
+ .foot__item--second {
+    padding: 15px 30px 0px 0px;
+ }
+
+ .foot__item--last {
+    padding: 15px 50px 0px 0px;
+ }
 
 .foot__title {
     font-family: 'EB Garamond', serif;
@@ -180,10 +203,6 @@ body {
     transform: translateY(-50%) rotate(135deg);
 }
 
-.foot__text {
-    margin: 9px 0px 9px 18px;
-}
-
 .fa-solid.fa-location-dot {
     padding-right: 14px;
     color: rgba(35, 219, 231, 1);
@@ -199,6 +218,10 @@ body {
     color: rgba(35, 219, 231, 1);
 }
 
+.foot__text {
+    margin: 9px 0px 9px 18px;
+}
+
 .date__text {
     margin: 9px 0px 9px 15px; 
  }
@@ -207,22 +230,18 @@ body {
     margin: 9px 0px 9px 25px;
 }
 
-.discover {
+.discover{
     background-color: rgba(35, 219, 231, 1);
-    width: 200px;
+    width: 180px;
     height: 100px;
     border-radius: 25px;
-    box-sizing: border-box;
-}
+    
 
-.discover__text {
     font-weight: 700;
     font-size: 24px;
     line-height: 28.8px;
     color: rgba(255, 255, 255, 1);
-    padding: 36px 31px 35px 59.5px;
 }
-
 
 /* Sites*/
 
@@ -235,7 +254,22 @@ body {
 .logos {
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.img__item {
+    height: 30px;
+}
+
+.img__item:first-child {
+    height: 25px;
+    padding-left: 100px;
+}
+
+.img__item:last-child{
+    height: 18px;
+    padding-right: 100px;
 }
 
 /*Img*/
@@ -254,21 +288,13 @@ body {
    background-color: rgba(244, 252, 255, 1);
 }
 
-h1 {
+.relax__memorable {
     display: flex;
-    font-family: 'EB Garamond';
-    font-size: 64px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 1);
-
+    
     padding: 90px 0px 0px 125px;
 }
 
 .relax__title {
-    font-size: 24px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.7);
-
     padding: 35px 0px 0px 125px;
 }
 
@@ -331,39 +357,20 @@ h1 {
 
 .relax__vactitle {
     margin-top: 185px;
-
-    font-size: 64px;
-    color: rgba(0, 0, 0, 1);
 }
 
 .relax__vactext {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 24px;
-
     margin-top: 25px;
 }
 
 .relax__numbers {
     display: flex;
-}
-
-.vacair__vacpack {
-    margin: 46px 222px 0px 0px;
-}
-
-.vactraveler__vachotel {
-    margin-top: 46px;
-}
-
-.vacation__pack {
-    margin-top: 61px;
-}
-
-.vacation__hotel {
-    margin-top: 61px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .number__vac{
+    margin-top: 46px;
     padding: 10px;
     font-family: 'Monotype Corsiva', serif;
     font-style: italic;
@@ -371,34 +378,27 @@ h1 {
     color: rgba(35, 219, 231, 1);
 } 
 
-.vacation__text {
-    font-size: 24px;
-    color:  rgba(0, 0, 0, 0.7);
-}
-
 .section__top {
     display: flex;
+    justify-content:space-between;
     background: rgba(244, 252, 255, 1);
+    padding-right: 125px ;
 }
 
 .top__title {
     text-transform: capitalize;
-    font-size: 64px;
-    color: rgba(0, 0, 0, 1);
 
     padding-top: 100px;
     margin: 0px 0px 25px 125px;
 }
 
 .top__text {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.7);
     margin-left: 125px;
 }
 
-
 .top__items {
     display: flex;
+    align-items: flex-end;
 }
 
 .circle__first {
@@ -406,8 +406,7 @@ h1 {
     height: 50px;
     background: rgba(231, 231, 231, 1);
     border-radius: 50%;
-
-    margin: 181px 15px 0px 573px;
+    margin-right: 15px;
 }
 
 .circle__second {
@@ -415,8 +414,6 @@ h1 {
     height: 50px;
     background: rgba(35, 219, 231, 1);
     border-radius: 50%;
-
-    margin: 181px 125px 0px 0px ;
 }
 
 /*Relax__pic*/
@@ -473,13 +470,13 @@ h1 {
 .star {
     width: 20px;
     height: 18.75px;
-    margin: 2px 15px 0px 0px;
+    margin-top: 2px;
 }
 
 .star__two {
     width: 20px;
     height: 18.75px;
-    margin: 2px 2px 0px 0px;
+    margin-top: 2px;
 }
 
 .pic__rating {
@@ -492,7 +489,6 @@ h1 {
 .pic__text {
     margin: 0px 32px 55px 19px;
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -503,9 +499,7 @@ h1 {
 }
 
 .comments__title {
-    font-size: 64px;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
 
     padding-top: 100px;
 }
@@ -529,7 +523,6 @@ h1 {
 
 .first__text {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7);
     padding: 50px 19px 10.47px 19px;
     text-align: center;
 }
@@ -588,8 +581,6 @@ h1 {
 }
 
 .second__text {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 1);
     text-align: center;
 
     margin: 64px 20px 26.07px 22px;
@@ -631,7 +622,6 @@ h1 {
     margin-top: 4px;
 }
 
-
 .comment__third {
     width: 323px;
     height: 260px;
@@ -645,7 +635,6 @@ h1 {
 
 .third__text {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7);
     padding: 50px 19px 23.27px 19px;
     text-align: center;
 }
@@ -654,10 +643,10 @@ h1 {
     display: flex;
 }
 
-
 .stars--three {
     margin-left: 72px;
 }
+
 .stars__pic--three {
     width: 25px;
     height: 21.87px;
@@ -703,9 +692,6 @@ h1 {
 .letter__title {
     padding: 136px 360px 30px 359px;
     text-align: center;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 120%;
 }
 
 .letter__text {
@@ -734,7 +720,7 @@ h1 {
     color: rgba(0, 0, 0, 0.7);
 }
 
-button {
+.join {
     color: rgba(255, 255, 255, 1);
     background: rgba(35, 219, 231, 1);
     width: 202px;
@@ -754,8 +740,7 @@ footer {
     background: rgba(244, 252, 255, 1);
     height: 543px;
     display: flex;
-    justify-content: space-between;
-    padding-right: 250px;
+    justify-content: space-evenly;
 }
 
 .foot__socialnetwork {
@@ -763,7 +748,7 @@ footer {
 }
 
 .foot__logo {
-    margin: 145px 0px 176px 125px;
+    margin: 145px 0px 176px 0px;
 }
 
 .footer__pic {
@@ -771,11 +756,6 @@ footer {
     width: 71px;
     height: 42.93px;
     margin-bottom: 41px;
-}
-
-.footer__text {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 .foot__socialnetwork {
@@ -798,23 +778,20 @@ footer {
 
 .fa-brands.fa-instagram:before {
     display: block;
-    width: 22.92px;
-    height: 22.92px;
-    margin: 17px 17px;
+    font-size: 24px;
+    margin: 12px 13px;
 }
 
 .fa-brands.fa-facebook:before {
     display: block;
-    width: 25px;
-    height: 25px;
-    margin: 16px 16px;
+    font-size: 24px;
+    margin: 12px 12px;
 }
 
 .fa-brands.fa-youtube:before {
     display: block;
-    width: 26.25px;
-    height: 18.4px;
-    margin: 17px 15px;
+    font-size: 24px;
+    margin: 12px 11px;
 }
 
 .footer__head {
